@@ -28,7 +28,7 @@ getHomeR = do
     let submission = Nothing :: Maybe FileForm
         handlerName = "getHomeR" :: Text
     allComments <- runDB $ getAllComments
-    allHaskellPackages <- runDB $ selectList [] [Asc HaskellPackageId]
+    allHaskellPackages <- runDB $ selectList [] [Asc HaskellPackageName]
 
     defaultLayout $ do
         let (commentFormId, commentTextareaId, commentListId) = commentIds
@@ -44,7 +44,7 @@ postHomeR = do
             FormSuccess res -> Just res
             _ -> Nothing
     allComments <- runDB $ getAllComments
-    allHaskellPackages <- runDB $ selectList [] [Asc HaskellPackageId]
+    allHaskellPackages <- runDB $ selectList [] [Asc HaskellPackageName]
 
     defaultLayout $ do
         let (commentFormId, commentTextareaId, commentListId) = commentIds
