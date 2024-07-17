@@ -5,7 +5,7 @@
                 Haskell Roulette
             <h2>
                 A place to wander around and learn Haskell :)
-            <a href="" .btn.btn-info.btn-lg>
+            <a href="@{RandomR}" .btn.btn-info.btn-lg>
                 Explore Random Package
 
 <div .container>

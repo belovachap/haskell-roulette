@@ -169,6 +169,7 @@ instance Yesod App where
     isAuthorized RobotsR _ = return Authorized
     isAuthorized (StaticR _) _ = return Authorized
     isAuthorized (PackageR _) _ = return Authorized
+    isAuthorized RandomR _ = return Authorized
 
 
     -- the profile route requires that the user is authenticated, so we

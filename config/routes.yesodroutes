@@ -11,6 +11,8 @@
 
 /package/#HaskellPackageId PackageR GET
 
+/random RandomR GET
+
 /comments CommentR POST
 
 /profile ProfileR GET
