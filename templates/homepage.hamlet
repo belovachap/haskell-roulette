@@ -148,4 +148,4 @@
                <div .page-header>
                    <h1 #haskell-packages>Haskell Packages
                    $forall package <- allHaskellPackages
-                       <li>#{haskellPackageName $ entityVal package}
+                       <li><a href="@{PackageR (entityKey package)}">#{haskellPackageName $ entityVal package}
