@@ -37,5 +37,5 @@ database:
   database: "_env:YESOD_SQLITE_DATABASE:haskell-roulette.sqlite3"
   poolsize: "_env:YESOD_SQLITE_POOLSIZE:100"
 
-copyright: Insert copyright statement here
+copyright: © Chapman Shoop 2024+
 #analytics: UA-YOURCODE
