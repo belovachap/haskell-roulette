@@ -114,6 +114,11 @@ instance Yesod App where
                     { menuItemLabel = "Home"
                     , menuItemRoute = HomeR
                     , menuItemAccessCallback = True
+                    },
+                  NavbarLeft $ MenuItem
+                    { menuItemLabel = "Random"
+                    , menuItemRoute = RandomR
+                    , menuItemAccessCallback = True
                     }
                 ]
 
