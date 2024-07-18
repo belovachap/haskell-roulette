@@ -13,5 +13,5 @@ getPackageR name = do
     package <- runDB $ get404 name
 
     defaultLayout $ do
-        setTitle "Welcome To Package!"
+        setTitle (toHtml (haskellPackageName package))
         $(widgetFile "package")

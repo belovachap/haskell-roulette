@@ -1,0 +1,4 @@
+#package-masthead {
+    margin-top: auto;
+    min-height: 220px;
+}

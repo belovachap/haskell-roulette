@@ -1,8 +1,8 @@
-<div .masthead>
+<div #package-masthead .masthead>
     <div .container>
         <div .row>
             <h1 .header>
-                Package #{haskellPackageName package}!
+                #{haskellPackageName package}
 
 <div .container>
     <div .bs-docs-section>
