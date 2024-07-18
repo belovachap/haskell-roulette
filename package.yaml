@@ -44,6 +44,10 @@ dependencies:
 - foreign-store
 - random
 - random-shuffle
+- cmark
+- sqlite-simple
+- filepath
+- blaze-html
 
 # The library contains all of our application code. The executable
 # defined below is just a thin wrapper.

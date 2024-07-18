@@ -6,8 +6,7 @@
 module Handler.Package where
 
 import Import
-import Yesod.Form.Bootstrap3 (BootstrapFormLayout (..), renderBootstrap3)
-import Text.Julius (RawJS (..))
+import Text.Blaze.Html (preEscapedToHtml)
 
 getPackageR :: HaskellPackageId -> Handler Html
 getPackageR name = do

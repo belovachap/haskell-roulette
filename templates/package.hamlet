@@ -3,3 +3,10 @@
         <div .row>
             <h1 .header>
                 Package #{haskellPackageName package}!
+
+<div .container>
+    <div .bs-docs-section>
+    $maybe notes <- (haskellPackageNotes package)
+        #{preEscapedToHtml notes}
+    $nothing
+        <p>No notes yet.

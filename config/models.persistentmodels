@@ -3,15 +3,5 @@
 
 HaskellPackage
     name Text
+    notes Text Maybe
     UniqueName name
-HackageURL
-    package HaskellPackage
-    version Text
-    url Text
-    UniquePackageVersion package version
-StackageURL
-    package HaskellPackage
-    resolver Text
-    version Text
-    url Text
-    UniquePackageResolver package resolver
