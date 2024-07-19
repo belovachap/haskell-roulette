@@ -4,7 +4,7 @@
 
 # Installation
 
-See https://www.yesodweb.com/page/quickstart
+See [https://www.yesodweb.com/page/quickstart](https://www.yesodweb.com/page/quickstart)
 
 # Snippets
 
@@ -12,4 +12,10 @@ See https://www.yesodweb.com/page/quickstart
 
 ```
 $ stack exec -- yesod devel
+```
+
+## Running scripts
+
+```
+$ stack runghc scripts/load-markdown-notes.hs
 ```
