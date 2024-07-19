@@ -8,9 +8,10 @@ module Handler.Package where
 import Import
 import Text.Blaze.Html (preEscapedToHtml)
 
-getPackageR :: HaskellPackageId -> Handler Html
+getPackageR :: Text -> Handler Html
 getPackageR name = do
-    package <- runDB $ get404 name
+    entity <- runDB $ getBy404 (UniqueName name)
+    let package = entityVal entity
 
     defaultLayout $ do
         setTitle (toHtml (haskellPackageName package))

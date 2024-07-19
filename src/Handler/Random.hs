@@ -14,4 +14,4 @@ getRandomR = do
     randomGenerator <- newStdGen
     packages <- runDB $ (selectList [] [] :: DB [Entity HaskellPackage])
     let randomPackage = Prelude.head $ shuffle' packages (Prelude.length packages) randomGenerator
-    redirect $ PackageR (entityKey randomPackage)
+    redirect $ PackageR (haskellPackageName $ entityVal randomPackage)

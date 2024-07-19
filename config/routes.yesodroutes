@@ -8,6 +8,6 @@
 
 / HomeR GET
 
-/package/#HaskellPackageId PackageR GET
+/package/#Text PackageR GET
 
 /random RandomR GET
